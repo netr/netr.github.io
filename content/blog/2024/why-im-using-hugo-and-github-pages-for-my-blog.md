@@ -87,7 +87,7 @@ If you want to have more control over the css you can run `hugo gen chromastyles
 
 Move the `syntax.css` to something like `/static/css/syntax.css` and import it into your layout using `<link rel="stylesheet" href="/css/syntax.css">`.
 
-![Overflow mess](/images/fix-to-overflow-mess.png)
+![Overflow mess](/images/fix-to-overflow-mess.webp)
 
 This is the route I chose because I was having overflow problems on the `Fix for:` code block above. It was running all of the text off the page. To fix it inside of my `static/css/syntax.css` I changed:
 
@@ -105,12 +105,47 @@ It uses [front matter](https://gohugo.io/content-management/front-matter/) which
 
 Since i'm using my username, i created the repository `netr.github.io` and uploaded my files to it. I've seen online that some people use submodules for their public folder. I might do that later, but for now i'm going to keep it simple. 
 
-## Hosting on github pages
+## Set up continuous deployment onto github pages using github actions
 
-Using the hugo workflow, I ran into some problems initially. Github actions was failing while trying to build the theme with jekyll. I had to pull the them into the project and remove any .git bindings.
+Using the hugo workflow, I ran into some problems initially. Github actions was failing while trying to build the theme with jekyll. I had to pull the them into the project and remove any .git bindings. 
+
+If github pages is only returning an XML. Check the github action logs for `WARN found no layout file`. If you're getting them, like I was, add the theme to your github actions command:
+```yaml
+    steps:
+      - name: Install Hugo CLI
+    ...
+    ...
+    run: |
+        hugo \
+        --gc \
+        --minify \
+        --theme=hugo-theme-m10c \ <-- add this line here
+        --baseURL "${{ steps.pages.outputs.base_url }}/"
+```
 
 ## Setting custom domain
 
 ## Speed tests
+
+Out of the box while viewing this blog post, it got:
+
+![Baseline performance](/images/github-pages-performance.webp)
+
+## Problems in Accessibility
+ 
+``` 
+Serve images in next-gen formats Potential savings of 51 KiB
+```
+
+![Webp vs Png](/images/webp-vs-png-filesize.webp)
+
+I converted all the images to webp, pushed to github and tried again:
+
+and 
+
+```
+Eliminate render-blocking resources Potential savings of 280 ms
+```
+
 
 ## It's easy enough, if you want to start a blog, this is the most frictionless
