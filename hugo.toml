@@ -1,0 +1,36 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Netr Dev Blog'
+
+# Theme
+theme = "hugo-theme-m10c"
+
+[params]
+    author = "Corey Jackson"
+    description = "A blog about software development and other things."
+    avatar = "images/avatar.png"
+    menu_item_separator = "•"
+    favicon = "/favicon.ico"
+
+[[params.social]]
+    icon = "brand-github"
+    name = "My Github"
+    url = "https://github.com/netr"
+
+[[params.social]]
+    icon = "brand-x"
+    name = "My X"
+    url = "https://twitter.com/netrdev"
+
+[[params.social]]
+    icon = "at-sign"
+    name = "My Email"
+    url = "mailto:corey@netr.dev"
+
+[params.style]
+    darkestColor = "#181926"
+    darkColor = "#24273a" 
+    lightColor = "#CAD3F5"
+    lightestColor = "#f5f5f5"
+    primaryColor = "#c6a0f6"
+    secondaryColor = "#8BD5CA"
