@@ -162,4 +162,10 @@ Eliminate render-blocking resources Potential savings of 280 ms
 
 There's still some issues with using the google fonts, but I like how they look. It's worth a bit of a delay for them. 
 
+I added a meta description for seo to get to 100%.
+
+I ran the benchmark in chrome incognito mode. I was getting noise from my extensions and they were driving the score down. Without those reaching 100% was easy.
+
+![100% on almost all lighthouse](/images/100-pct-lighthouse.webp)
+
 ## It's easy enough, if you want to start a blog, this is the most frictionless
