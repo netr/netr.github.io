@@ -107,7 +107,7 @@ Since i'm using my username, i created the repository `netr.github.io` and uploa
 
 ## Hosting on github pages
 
-Using the hugo workflow, I 
+Using the hugo workflow, I ran into some problems initially. Github actions was failing while trying to build the theme with jekyll. I had to pull the them into the project and remove any .git bindings.
 
 ## Setting custom domain
 
