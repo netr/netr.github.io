@@ -152,13 +152,13 @@ and
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">    
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 ```
 
 ```
 Eliminate render-blocking resources Potential savings of 280 ms
 ```
 
-`Background and foreground colors do not have a sufficient contrast ratio.` and `Links rely on color to be distinguishable.`
+There's still some issues with using the google fonts, but I like how they look. It's worth a bit of a delay for them. 
 
 ## It's easy enough, if you want to start a blog, this is the most frictionless
