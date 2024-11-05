@@ -2,6 +2,11 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Netr Dev Blog'
 
+# URL
+[permalinks]
+    [permalinks.page]
+        blog = '/blog/:year/:month/:day/:slug/'
+
 # Theme
 theme = "hugo-theme-m10c"
 
@@ -34,3 +39,10 @@ theme = "hugo-theme-m10c"
     lightestColor = "#f5f5f5"
     primaryColor = "#c6a0f6"
     secondaryColor = "#8BD5CA"
+
+[markup]
+    [markup.highlight]
+        lineNoStart = 1
+        lineNos = true
+        noClasses = false
+        codeFences = true
