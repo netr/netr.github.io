@@ -141,16 +141,24 @@ Serve images in next-gen formats Potential savings of 51 KiB
 
 I converted all the images to webp, pushed to github and tried again:
 
+Accessibility fix for: Background and foreground colors do not have a sufficient contrast ratio.
+
+I fixed it by changing the `sd` and `comment` of my code block class to a brighter color. The contrast of the line numbers, comments, and command line text was not high enough.
+
+To fix the links, I just added `text-decoration: underline`. This brough the accessbility back up to 100%.
+
 and 
 
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">    
 ```
 
 ```
 Eliminate render-blocking resources Potential savings of 280 ms
 ```
 
+`Background and foreground colors do not have a sufficient contrast ratio.` and `Links rely on color to be distinguishable.`
 
 ## It's easy enough, if you want to start a blog, this is the most frictionless
