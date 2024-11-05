@@ -13,70 +13,55 @@ Since I never got in the habit of writing blogs enough, the hosting was never wo
 
 With Github Pages, the hosting is taken care of for you. Hugo is completely open source, so it's free as well. This gave me the fastest option to go from idea to blog to hosting. Once it's setup, outside of the domain, it's always going to be live. I can build my habits without the cost.
 
-It's really easy to setup. Took me about an hour. I easily added a custom theme I wanted (https://themes.gohugo.io/themes/hugo-theme-m10c/) and added all the customizations that I could into my `hugo.toml`. I was trying to learn how the configuration file worked, and this gave me the first chance to start turning knobs. 
+## Getting Started with Hugo
 
-With a tiny bit of color choosing, I had my blog ready to go.
+### Setting up Hugo on Ubuntu 24.04
 
-## Setting up Hugo on Ubuntu 24.04
-
-Installed hugo from the `go install` and installed `extended`. My theme needed to have the `scss` capabilities, so I needed extended to run it. 
-
-Then i ran 
+1. Install Hugo extended version using `go install` (the extended version is needed for SCSS capabilities)
+2. Create a new blog:
 ```bash
 hugo new blog
 cd /blog
 hugo server
 ```
 
-Just like that. I have something working. 
+### Choosing and Configuring a Theme
 
-## Configuring the theme
+1. Browse themes at https://themes.gohugo.io/
+2. I chose the m10c theme (https://themes.gohugo.io/themes/hugo-theme-m10c/)
+3. Configure the theme in `hugo.toml`
+4. Customize theme colors and styles in `/themes/[theme_name]/assets/css/components/*.scss`
 
-Inside the folder you'll have `/themes/[theme_name]` -- inside of `/assets/css/components` i found all the .scss files that I needed. Your theme will obviously vary, but it's nice to see that I can customize every part of this very easily. That's another huge plug to hugo. There's not a huge amount of clutter in your way from customizing your site. It's made for developers and it works well for us.
+### Common Theme Setup Issues
 
-## Fix for: WARN found no layout file for "html" for kind "home"
-
-At one point during my testing I was having an issues seeing my first post. My theme wasn't working and showing the post. I was trying all kinds of things and after talking to claude. I realized i forgot to pass the theme in. Even though i was getting some visual feedback that the theme was being used, it wasn't working. If you see these warnings:
-
+If you see these warnings:
 ```text
-WARN  found no layout file for "html" for kind "home": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
-WARN  found no layout file for "html" for kind "section": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
-WARN  found no layout file for "html" for kind "taxonomy": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
-WARN  found no layout file for "html" for kind "page": You should create a template file which matches Hugo Layouts Lookup Rules for this combination.
+WARN  found no layout file for "html" for kind "home"
+WARN  found no layout file for "html" for kind "section"
+WARN  found no layout file for "html" for kind "taxonomy"
+WARN  found no layout file for "html" for kind "page"
+```
+Solution: Pass your theme explicitly when running the server:
+```bash
+hugo server --theme=hugo-theme-m10c
 ```
 
-Be sure to pass your theme in like `hugo server --theme=hugo-theme-m10c`
+## Configuring Your Blog
 
-## Setting up a date separated url format for permalinks
+### Setting up URL Structure
 
-To get a wordpress style permalink for your blog, you can take advantange of the `Front Matter` date and the `permalink` config:
-
+To get WordPress-style permalinks, configure your `hugo.toml`:
 ```toml
 [permalinks]
     [permalinks.page]
         blog = '/blog/:year/:month/:day/:slug/'
 ```
+This transforms `/content/blog/2024/post.md` into `https://domani.com/blog/2024/11/04/post`
 
-Turns your `/content/blog/2024/post.md` into `https://domani.com/blog/2024/11/04/post`
+### Customizing Code Blocks
 
-## Customizing the code block's theme and font
-
-Here is a list of all the chroma styles: [Chroma Style Gallery](https://xyproto.github.io/splash/docs/)  and find all the stylings / options: [hugo transform highlight options](https://gohugo.io/functions/transform/highlight/#options)
-
-You can easily customize it in the `hugo.toml` using:
-
-```toml
-[markup]
-    [markup.highlight]
-        codeFences = true
-        lineNoStart = 1
-        lineNos = true
-        noClasses = true
-        style = "catppuccin-mocha"
-```
-
-If you want to have more control over the css you can run `hugo gen chromastyles --style=monokai > syntax.css` and change the config to:
-
+1. View available styles at [Chroma Style Gallery](https://xyproto.github.io/splash/docs/)
+2. Configure in `hugo.toml`:
 ```toml
 [markup]
     [markup.highlight]
@@ -86,86 +71,86 @@ If you want to have more control over the css you can run `hugo gen chromastyles
         codeFences = true
 ```
 
-Move the `syntax.css` to something like `/static/css/syntax.css` and import it into your layout using `<link rel="stylesheet" href="/css/syntax.css">`.
-
-![Overflow mess](/images/fix-to-overflow-mess.webp)
-
-This is the route I chose because I was having overflow problems on the `Fix for:` code block above. It was running all of the text off the page. To fix it inside of my `static/css/syntax.css` I changed:
-
+For more control:
+1. Generate custom CSS: `hugo gen chromastyles --style=monokai > syntax.css`
+2. Move to `/static/css/syntax.css`
+3. Import in layout: `<link rel="stylesheet" href="/css/syntax.css">`
+4. Fix overflow issues by adding:
 ```css
 /* PreWrapper */ .chroma { color:#cdd6f4;background-color:#1e1e2e;overflow:auto; }
 ```
 
-## Writing, this, my first blog post
+## Creating Content
 
-`hugo create content/blog/2024/blog-title.md`
+Create new posts using:
+```bash
+hugo create content/blog/2024/blog-title.md
+```
+Posts use [front matter](https://gohugo.io/content-management/front-matter/) for metadata. You can create default templates in [archetypes](https://gohugo.io/content-management/archetypes/).
 
-It uses [front matter](https://gohugo.io/content-management/front-matter/) which allows you to create metadata for each blog. You can create default templates inside of [archetypes](https://gohugo.io/content-management/archetypes/) but I didn't get into that much. They're very robust and good to know that they're there. 
+## Deployment
 
-## Pushing to github
+### Setting up Github Pages
 
-Since i'm using my username, i created the repository `netr.github.io` and uploaded my files to it. I've seen online that some people use submodules for their public folder. I might do that later, but for now i'm going to keep it simple. 
+1. Create a repository named `username.github.io`
+2. Upload your Hugo files
+3. Set up Github Actions for continuous deployment
 
-## Set up continuous deployment onto github pages using github actions
+### Github Actions Configuration
 
-Using the hugo workflow, I ran into some problems initially. Github actions was failing while trying to build the theme with jekyll. I had to pull the them into the project and remove any .git bindings. 
-
-If github pages is only returning an XML. Check the github action logs for `WARN found no layout file`. If you're getting them, like I was, add the theme to your github actions command:
+If Github Pages only returns XML, check action logs for `WARN found no layout file`. Fix by adding the theme to your workflow:
 ```yaml
-    steps:
-      - name: Install Hugo CLI
-    ...
+steps:
+  - name: Install Hugo CLI
     ...
     run: |
         hugo \
         --gc \
         --minify \
-        --theme=hugo-theme-m10c \ <-- add this line here
+        --theme=hugo-theme-m10c \
         --baseURL "${{ steps.pages.outputs.base_url }}/"
 ```
 
-## Setting custom domain
+## Lighthouse Tests and Optimizations
 
-## Speed tests
-
-Out of the box while viewing this blog post, it got:
+Initial lighthouse test results showed room for improvement. This is still very good out of the box, especially for how easy it was to setup. All the required fixes were my fault rather than anything hugo was doing. 
 
 ![Baseline performance](/images/github-pages-performance.webp)
 
-## Problems in Accessibility
- 
-``` 
-Serve images in next-gen formats Potential savings of 51 KiB
-```
+### Optimizing Images 
+- Converted images to WebP format
+- Reduced file sizes significantly
 
 ![Webp vs Png](/images/webp-vs-png-filesize.webp)
 
-I converted all the images to webp, pushed to github and tried again:
-
-Accessibility fix for: Background and foreground colors do not have a sufficient contrast ratio.
-
-I fixed it by changing the `sd` and `comment` of my code block class to a brighter color. The contrast of the line numbers, comments, and command line text was not high enough.
-
-To fix the links, I just added `text-decoration: underline`. This brough the accessbility back up to 100%.
-
-and 
-
+### Optimizing Fonts
+Combined fonts into one url and used preconnects to shave off some time by establishing a connection early.
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 ```
 
+### Added meta description to blog post
+The SEO was taking a 9 point hit because I forgot to add a meta description. Since hugo uses front matter, all I had to do was add a description tag to the top of the page.
+```toml
+description = "Why and how to create a blog using Hugo and hosting it for free on Github Pages."
 ```
-Eliminate render-blocking resources Potential savings of 280 ms
-```
 
-There's still some issues with using the google fonts, but I like how they look. It's worth a bit of a delay for them. 
+### Improving Accessibility
 
-I added a meta description for seo to get to 100%.
+![Starting accessibility](/images/contract-accessibility.webp)
 
-I ran the benchmark in chrome incognito mode. I was getting noise from my extensions and they were driving the score down. Without those reaching 100% was easy.
+1. Fixed contrast ratios for code blocks. Google devtools has a great feature that highlights the exact html blocks that are giving you issues. As seen here: [comment](/images/comment.webp), [page number](/images/page-number.webp), [cli-text](/images/cli-text.webp)
 
+2. Added an underline to all links so I didn't have to change the color and deal with contrast.
+
+### Added a favicon
+
+The `Best Practices` was complaining about errors in the console. It turned out that I was missing a favicon.ico. I converted my avatar into [an icon file](https://cloudconvert.com/) and that put me back at 100%. 
+
+### Final Results
+After optimizations, achieved near-perfect Lighthouse scores:
 ![100% on almost all lighthouse](/images/100-pct-lighthouse.webp)
 
-## It's easy enough, if you want to start a blog, this is the most frictionless
+Note: For best benchmark results, test in Chrome incognito mode to avoid extension interference.
