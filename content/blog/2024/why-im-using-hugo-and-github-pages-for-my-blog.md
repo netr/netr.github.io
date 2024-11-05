@@ -103,7 +103,11 @@ It uses [front matter](https://gohugo.io/content-management/front-matter/) which
 
 ## Pushing to github
 
+Since i'm using my username, i created the repository `netr.github.io` and uploaded my files to it. I've seen online that some people use submodules for their public folder. I might do that later, but for now i'm going to keep it simple. 
+
 ## Hosting on github pages
+
+Using the hugo workflow, I 
 
 ## Setting custom domain
 

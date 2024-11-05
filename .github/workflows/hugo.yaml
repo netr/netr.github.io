@@ -59,7 +59,9 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --theme=hugo-theme-m10c \
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --format html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
