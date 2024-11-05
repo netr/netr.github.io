@@ -143,6 +143,11 @@ I converted all the images to webp, pushed to github and tried again:
 
 and 
 
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+```
+
 ```
 Eliminate render-blocking resources Potential savings of 280 ms
 ```
