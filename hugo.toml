@@ -13,7 +13,7 @@ theme = "hugo-theme-m10c"
 [params]
     author = "Corey Jackson"
     description = "A blog about software development and other things."
-    avatar = "images/avatar.png"
+    avatar = "images/avatar.webp"
     menu_item_separator = "•"
     favicon = "/favicon.ico"
 
