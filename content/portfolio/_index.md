@@ -7,14 +7,14 @@ description = "A collection of all my professional and personal projects."
 
 I've been programming since I was 13 years old. I learned how to program by hanging out in [AOL chatrooms](https://github.com/readme/featured/aol-programming-culture). My first real adventure into building full programs was reverse engineering the AOL 5.0 protocol (I effectively rebuilt AOL using raw sockets). I fell in love with programming right away and have been doing it almost daily ever since.
 
-I've worked on a countless projects and I've touched almost every type of technology/framework that has been popular in the last 20 years. Here is a list of my most recent projects (within the last 5 years), since it would be far too time consuming to list them all. Plus I'm sure you don't care about my Cities: Skylines mods or my GTA 5 server scripts (unless you do, then [let me know](mailto:corey@netr.dev)).
+I've worked on countless projects and I've touched almost every type of technology/framework that has been popular in the last 20 years. Here is a list of my most recent projects (within the last 5 years), since it would be far too time consuming to list them all. Plus I'm sure you don't care about my Cities: Skylines mods or my GTA 5 server scripts (unless you do, then [let me know](mailto:corey@netr.dev)).
 
 ## *Professional Projects*
 
 ### Dojo.ing: Memecoin Launchpad | [Website](https://dojo.ing)
 *October 2024 - Present*
 - **Backend:** Node.js, Express.js
-- **Frontend:** React, TypeScript, Next.js, Tailwind CSS, Shadcn, Server-Side Events (SSE)
+- **Frontend:** React, TypeScript, Next.js, Tailwind CSS, Shadcn, Server-Sent Events (SSE)
 - **Cloud:** AWS (S3, SQS, Lambda, API Gateway), Vercel
 - **Infrastructure:** Docker, Nginx, Terraform, GitHub Actions
 - **Databases:** MongoDB, Redis
@@ -24,7 +24,7 @@ I've worked on a countless projects and I've touched almost every type of techno
 
 Led the development of a high-performance Web3 platform integrating real-time blockchain data with a modern user interface. The system achieved 80-90% improvement in response times through strategic Redis caching and reduced blockchain query costs by 30-40%. Outside of sending transactions to the blockchain, Subgraph gave the system the ability to handle 100% of the presentation layer without needing to directly query the blockchain. Huge win.
 
-After thorough investigation, this was the first time that I implemented Server-Side Events (SSE) in a production environment. I absolutely love them. Given their unidirectional design, they were a perfect match for what we needed. I was able to add real-time updates to the platform without having to worry about the complexity of WebSockets.
+After thorough investigation, this was the first time that I implemented Server-Sent Events (SSE) in a production environment. I absolutely love them. Given their unidirectional design, they were a perfect match for what we needed. I was able to add real-time updates to the platform without having to worry about the complexity of WebSockets.
 
 ### Optimistiq: Peer-to-Peer Texting Platform | [Website](https://optq.com)
 *June 2024 - November 2024*
