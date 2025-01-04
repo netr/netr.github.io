@@ -1,0 +1,22 @@
++++
+draft = false
+title = 'Books I read in 2024'
+description = "My reading list and reviews."
++++
+
+## My Reading List and Reviews
+
+1. [Designing Data-Intensive Applications by Martin Kleppmann](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321) - **4.5/5** - This is one of my favorite books about distributed systems and the problems that you face when working with large scale data systems. It's been recommended by a lot of people in the industry and it's pretty clear why, once you start reading it. I had to take a lot of notes and anki cards to remember all the concepts, but it was worth it.
+
+2. [Machine Learning System Design Interview by Ali Aminian & Alex Xu](https://www.amazon.com/Machine-Learning-System-Design-Interview/dp/1736049127) - **4/5** - Might be a little too basic and/or abstract for some people, but I still definitely enjoyed it. System design is one of my favorite things to think about and this book gave me some nice insights into how to think about machine learning systems. It primarily focuses on recommendation / ranking systems, but that's not a bad thing. It's a good starting point for anyone looking to see what the MLOps side of things looks like.
+
+3. [Microservices Patterns by Chris Richardson](https://www.amazon.com/Microservices-Patterns-examples-Chris-Richardson/dp/1617294543) - **3/5** - I thought it was a good book, with some nice insights, but it read a little too much like an advertisement for Eventuate. I understand why the author decided to use his own framework as the example, but I would have liked it to be a bit more framework and language agnostic. I still learned a good bit from it, but that was a bit of a turn off for me.
+
+4. [Shuttered Secrets by Melissa Erin Jackson](https://www.amazon.com/Shuttered-Secrets-Paranormal-Suspense-Mystery/dp/1736186604) - **5/5** - I'll admit, I'm very biased about this book, because my sister wrote it. But, I genuinely enjoyed it. I read the entire thing on a plane back from Maui. It's a paranormal, fast-paced, murder mystery and very fun to read. It's the 2nd in the series. 
+
+5. [Flow: The Psychology of Optimal Experience by Mihaly Csikszentmihalyi](https://www.amazon.com/Flow-Psychology-Experience-Perennial-Classics/dp/0061339202) - **4/5** - This is a great book that my girlfriend suggested to me. I've always been interested in phenomena of flow states. This book definitely is not your generic self-help, do these 3 things and change your life type books. Instead it looks at a variety of different disciplines, activities and historical timelines to understand what makes us humans enjoy any and all experiences. It focuses more on finding intrinsic motivation (autotelic) and relying less on externalities to achieve ephemeral happiness. Overall, great read. One that I definitely think is worth reading multiple times throughout your life.
+
+6. [Atomic Habits by James Clear](https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299) - **4/5** - This book is highly regarded and is all over youtube/blogs. It was an easy read and well put together. I really liked the concepts of habit stacking and identifying your good and bad habits. In my opinion, I think it could have been 50% shorter, but I understand with books like this, you need to offer enough examples and stories to make the concepts stick. I think it's a great book for anyone looking to improve their habits and routines.
+
+7. [The Design of Everyday Things by Don Norman](https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654) - **4/5** - I've been trying to think more about design and user experience lately. This book was a great introduction to thinking through products in both the digital and physical worlds. It's a little dated, but the concepts are still very relevant. I'm not sure if I am better at designing things, but, I have a strong feeling that I'll circle back to this book at some point in the future. It feels like I need to add a few more books into my brain before I can fully appreciate the concepts in this book.
+
