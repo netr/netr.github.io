@@ -1,4 +1,4 @@
-baseURL = 'https://netr.github.io/'
+baseURL = 'https://netr.dev/'
 languageCode = 'en-us'
 title = 'Netr Dev Blog'
 
@@ -17,12 +17,12 @@ theme = "hugo-theme-m10c"
     pageRef = '/'
     weight = 10
   [[menus.main]]
-    name = 'Projects'
-    pageRef = '/projects'
+    name = 'Portfolio'
+    pageRef = '/portfolio'
     weight = 20
   [[menus.main]]
-    name = 'Resume'
-    pageRef = '/services'
+    name = 'Books'
+    pageRef = '/books'
     weight = 30
 
 [params]

@@ -21,6 +21,8 @@
     {{ template "_internal/google_analytics.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
     {{ template "_internal/opengraph.html" . }}
+    {{ $js := resources.Get "ts/app/main.ts" | js.Build }}
+    <script src="{{ $js.Permalink }}" defer></script>
 
   </head>
   <body>
