@@ -10,11 +10,11 @@ description = "My reading list and reviews."
 
 2. [Domain-Driven Design by Eric Evans](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) - *20%*  - The blue book of DDD. I've been wanting to read this for a while now. Very abstract and theoretical so far, but I like that. Most problems you're trying to solve with programming aren't clear cut, so I think it's important to have a good understanding of the theory behind your choices.
 
-3. [Train Your Mind, Change Your Brain by Sharon Begley](https://www.amazon.com/Train-Your-Mind-Change-Brain/dp/0345479890) - *50%* - Looks at the science behind neuroplasticity. There's a lot of mention of the Dalai Lama and Buddhism in this book, but it's not a religious book. It just describes scientific studies that were being presented to the Dalai Lama.
+3. [Train Your Mind, Change Your Brain by Sharon Begley](https://www.amazon.com/Train-Your-Mind-Change-Brain/dp/0345479890) - *50%* - Looks at the science behind neuroplasticity. There's a lot of mention of the Dalai Lama and Buddhism in this book, but it's not a religious book. It just describes scientific studies that were being presented to the Dalai Lama by neuroscientists. Heard about this book in a random tweet by [Yohei](https://twitter.com/yoheinakajima) shortly after he released BabyAGI.
 
 4. [Diabolical Sword: An Urban Fantasy Mystery by Melissa Erin Jackson](https://www.amazon.com/gp/product/B097D795WZ) - *10%* - My sister's first book of her 4 part series. I'm sorry Melissa, I'm a *bit* behind on reading these. I promise I'll finish it ASAP.
 
-5. [The Go-Giver by Bob Burg and John David Mann](https://www.amazon.com/Go-Giver-Expanded-Little-Powerful-Business-ebook/dp/B00YBBKLKS) - *50%* - I originally heard of this book on a Tim Ferris podcast episode with Matt Mullenweg? I think? The same episode where I realized I wasn't alone in my madness of listening to the same song for hours on end while I build things. It's an easy read, which is the intention, I'm pretty sure. Beauty lies in simplicity. 
+5. [The Go-Giver by Bob Burg and John David Mann](https://www.amazon.com/Go-Giver-Expanded-Little-Powerful-Business-ebook/dp/B00YBBKLKS) - *50%* - I originally heard of this book on a Tim Ferriss podcast episode with Matt Mullenweg, I think? The same episode where I realized I wasn't alone in my madness of listening to the same song for hours on end while I build things. It's an easy read, which is the intention, I'm pretty sure. Beauty lies in simplicity.
 
 ## Next in the queue
 
