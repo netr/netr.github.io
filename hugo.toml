@@ -1,6 +1,6 @@
 baseURL = 'https://netr.dev/'
 languageCode = 'en-us'
-title = 'Netr Dev Blog'
+title = "netr."
 
 # URL
 [permalinks]
@@ -13,21 +13,21 @@ theme = "hugo-theme-m10c"
 # Menu
 [menus]
   [[menus.main]]
-    name = 'Blog'
+    name = 'blog'
     pageRef = '/'
     weight = 10
   [[menus.main]]
-    name = 'Portfolio'
+    name = 'portfolio'
     pageRef = '/portfolio'
     weight = 20
   [[menus.main]]
-    name = 'Books'
+    name = 'books'
     pageRef = '/books'
     weight = 30
 
 [params]
     author = "Corey Jackson"
-    description = "A blog about software development and other things."
+    description = "software, system design, distributed systems, ai, maths, reading and whatever else proves interesting."
     avatar = "images/avatar.webp"
     menu_item_separator = "•"
     favicon = "/favicon.ico"
