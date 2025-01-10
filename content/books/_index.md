@@ -8,6 +8,6 @@ With YouTube and online content becoming more and more of a shallow and surface-
 
 ### Yearly Lists
 
-[Books i'm reading in 2025](/books/2025)
+[Books I'm reading in 2025](/books/2025)
 
 [Books I read in 2024](/books/2024)
