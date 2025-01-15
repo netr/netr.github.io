@@ -14,7 +14,7 @@ theme = "hugo-theme-m10c"
 [menus]
   [[menus.main]]
     name = 'blog'
-    pageRef = '/'
+    pageRef = '/blog'
     weight = 10
   [[menus.main]]
     name = 'portfolio'
