@@ -4,7 +4,7 @@ title = 'Books I read in 2024'
 description = "My reading list and reviews."
 +++
 
-## My Reading List and Reviews
+### My Reading List and Reviews
 
 1. [Designing Data-Intensive Applications by Martin Kleppmann](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321) - **4.5/5** - This is one of my favorite books about distributed systems and the problems that you face when working with large scale data systems. It's been recommended by a lot of people in the industry and it's pretty clear why, once you start reading it. I had to take a lot of notes and anki cards to remember all the concepts, but it was worth it.
 
