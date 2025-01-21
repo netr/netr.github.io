@@ -31,3 +31,5 @@ I love solving tough problems. With years of experience building applications fr
 ### Let's Build Something Interesting
 
 Check out my [portfolio](/portfolio) or shoot me an email at [corey@netr.dev](corey@netr.dev). I'm always down to chat about new opportunities or interesting technical challenges.
+
+### Blog Entries
