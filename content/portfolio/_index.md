@@ -11,6 +11,17 @@ I've worked on countless projects and I've touched almost every type of technolo
 
 ## *Professional Projects*
 
+### Ideacoin | [Website](https://goat.trading)
+*February 2025 - Present*
+- **Backend:** Node.js
+- **Frontend:** React, TypeScript, Next.js, Tailwind CSS, Shadcn, Server-Sent Events (SSE)
+- **Cloud:** AWS (S3, SQS, Lambda, API Gateway), Vercel
+- **Infrastructure:** Docker, Nginx, Terraform, GitHub Actions
+- **Databases:** MongoDB, Redis
+- **Blockchain:** TheGraph (Subgraph), Viem, RainbowKit
+- **Testing:** Vitest, React Testing Library
+- **Monitoring:** Sentry
+
 ### Dojo.ing: Memecoin Launchpad | [Website](https://dojo.ing)
 *October 2024 - Present*
 - **Backend:** Node.js, Express.js
