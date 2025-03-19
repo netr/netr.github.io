@@ -11,7 +11,7 @@ I've worked on countless projects and I've touched almost every type of technolo
 
 ## *Professional Projects*
 
-### Ideacoin | [Website](https://goat.trading)
+### Muse Markets | [Website](https://muse.markets)
 *February 2025 - Present*
 - **Backend:** Node.js
 - **Frontend:** React, TypeScript, Next.js, Tailwind CSS, Shadcn, Server-Sent Events (SSE)
@@ -21,6 +21,8 @@ I've worked on countless projects and I've touched almost every type of technolo
 - **Blockchain:** TheGraph (Subgraph), Viem, RainbowKit
 - **Testing:** Vitest, React Testing Library
 - **Monitoring:** Sentry
+
+TBD
 
 ### Dojo.ing: Memecoin Launchpad | [Website](https://dojo.ing)
 *October 2024 - Present*
